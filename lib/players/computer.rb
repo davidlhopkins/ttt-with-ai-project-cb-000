@@ -6,5 +6,6 @@ module Players
         "5"
       else
         "1"
+      end
   end
 end
