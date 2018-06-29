@@ -22,11 +22,11 @@ class Board
   end
 
   def full?
-    @cells.none? {|c| c == " "}
+    @cells.none? {|cell| cell == " "}
   end
 
   def turn_count
-    count = @cells.select { |c| c != " "}
+    count = @cells.select { |cell| cell != " "}
     count.size
   end
 
