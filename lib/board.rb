@@ -17,8 +17,11 @@ class Board
     puts " #{@cells[6]} | #{@cells[7]} | #{@cells[8]} "
   end
 
+  def input_to_index(input)
+    input.to_i - 1 
+
   def position(input)
-    @cells[input.to_i - 1]
+    self.@cells[input_to_index(input)]
   end
 
   def full?
