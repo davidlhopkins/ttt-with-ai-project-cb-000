@@ -38,7 +38,7 @@ class Board
     !taken?(input) && (1..9) === input.to_i
   end
 
-  def update(num, player)
+  def update(input, player)
     @cells[input.to_i - 1] = player.token
   end
 
