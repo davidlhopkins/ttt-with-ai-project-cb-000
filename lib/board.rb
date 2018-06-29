@@ -17,8 +17,8 @@ class Board
     puts " #{@cells[6]} | #{@cells[7]} | #{@cells[8]} "
   end
 
-  def position(num)
-    @cells[num.to_i - 1]
+  def position(input)
+    @cells[input.to_i - 1]
   end
 
   def full?
@@ -30,16 +30,16 @@ class Board
     count.size
   end
 
-  def taken?(num)
-    position(num) != " "
+  def taken?(input)
+    position(input) != " "
   end
 
-  def valid_move?(num)
-    !taken?(num) && (1..9) === num.to_i
+  def valid_move?(input)
+    !taken?(input) && (1..9) === input.to_i
   end
 
   def update(num, player)
-    @cells[num.to_i - 1] = player.token
+    @cells[input.to_i - 1] = player.token
   end
 
 end 
