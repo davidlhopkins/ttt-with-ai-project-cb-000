@@ -18,7 +18,8 @@ class Board
   end
 
   def input_to_index(input)
-    input.to_i - 1 
+    input.to_i - 1
+  end
 
   def position(input)
     self.@cells[input_to_index(input)]
